@@ -1,0 +1,9 @@
+.form-item-root input,
+.form-item-root input:hover,
+.form-item-root input:focus,
+.form-item-root input:focus-within,
+.form-item-root input:active {
+  border-radius: 16px !important;
+  border-color: #d1f5c9 !important;
+  box-shadow: none !important;
+}

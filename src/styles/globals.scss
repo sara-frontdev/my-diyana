@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../assets/sass/index.scss";
+
+body {
+  font-family: var(--font-yekan-regular), sans-serif !important;
+}
+
+html {
+  font-family: var(--font-yekan-regular), sans-serif !important;
+}
