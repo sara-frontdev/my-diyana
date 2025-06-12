@@ -6,16 +6,14 @@ import CustomeButton from "@/components/commonComponents/CustomeButton/CustomeBu
 const WelcomeBanner = () => {
   return (
     <>
-      <div className="relative w-full h-[600px]">
+      <div className="relative w-full min-h-[500px] sm:h-[600px]">
         <Image
           src="/images/header/childerenBack.webp"
-          alt=""
-          role="presentation"
-          aria-hidden="true"
+          alt="تصویر هدر"
           fill
           priority
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          className="object-cover"
+          sizes="100vw"
+          className="object-cover w-full"
         />
 
         {/* متن روی تصویر */}

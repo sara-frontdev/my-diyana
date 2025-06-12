@@ -8,7 +8,7 @@ import Navbar from "./Navbar/Navbar";
 const HeaderWithSlider = () => {
   return (
     <header>
-      <div className="relative z-10 2xl:w-[1400px] 2xl:mx-auto">
+      <div className="relative  custome2xl1:w-[1400px] custome2xl1:mx-auto">
         <UserToolbar />
 
         <Navbar />

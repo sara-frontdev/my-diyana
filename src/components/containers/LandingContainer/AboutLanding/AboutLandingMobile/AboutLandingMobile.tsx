@@ -6,7 +6,7 @@ import CustomeButton from "@/components/commonComponents/CustomeButton/CustomeBu
 const AboutLandingMobile = () => {
   return (
     <section
-      className=" flex flex-col-reverse lg:hidden   mt-44"
+      className=" flex flex-col-reverse lg:hidden mt-8 sm:mt-16"
       aria-labelledby="about-landing-title-mobile"
     >
       <h2 id="about-landing-title-mobile" className="sr-only">

@@ -1,3 +1,8 @@
+import insa from "$/images/footer/insa.webp";
+import phone from "$/images/footer/phone.webp";
+import telgeram from "$/images/footer/telgeram.webp";
+import whatsap from "$/images/footer/whatsap.webp";
+
 export const quickAccessLink = [
   {
     title: "ثبت نام آنلاین",
@@ -31,5 +36,28 @@ export const customerServiceLink = [
     title: "پشتیبانی",
     href: "/",
     color: "bg-[#fce798]",
+  },
+];
+
+export const socialLinks = [
+  {
+    href: "",
+    src: insa.src,
+    alt: "اینستاگرام",
+  },
+  {
+    href: "",
+    src: phone.src,
+    alt: "تلگرام",
+  },
+  {
+    href: "",
+    src: telgeram.src,
+    alt: "تلگرام",
+  },
+  {
+    href: "",
+    src: whatsap.src,
+    alt: "واتساپ",
   },
 ];

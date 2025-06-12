@@ -8,7 +8,7 @@ import NavbarMobile from "./NavbarMobile/NavbarMobile";
 const Navbar = () => {
   return (
     <>
-      <div className="absolute right-[95px] top-[9rem] z-30">
+      <div className=" absolute top-[8rem] sm:top-[9rem] right-16 sm:right-[170px] md:right-[110px] xl:right-[170px] z-30">
         <Image
           src="/images/header/abr.webp"
           alt="ابر گرافیکی"
@@ -21,8 +21,8 @@ const Navbar = () => {
         />
       </div>
 
-      <div className="bg-[#ddf2fc] h-48">
-        <div className="xs:mx-8 xs1:mx-8  xs2:mx-16 sm:mx-16 md:mx-20 pt-24 relative">
+      <div className="bg-[#ddf2fc] h-48 ">
+        <div className="xs:mx-8 xs1:mx-8  xs2:mx-16 sm:mx-16 md:mx-20 pt-24 relative custome2xl:w-[1400px] custome2xl:mx-auto">
           <NavbarLogoDecoration />
 
           <NavbarLaptop />

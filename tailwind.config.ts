@@ -33,6 +33,9 @@ const config: Config = {
         xs1: { min: "425px", max: "550px" },
         xs2: { min: "551px", max: "639px" },
         xs3: { min: "375px", max: "639px" },
+
+        custome2xl: { min: "1536px", max: "1999px" },
+        custome2xl1: { min: "2000px" },
       },
       keyframes: {
         floatUpDown: {

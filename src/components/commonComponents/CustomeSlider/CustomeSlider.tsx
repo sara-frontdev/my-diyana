@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, EffectFade } from "swiper/modules";
 import "swiper/css";
@@ -9,14 +10,6 @@ import "swiper/css/effect-fade";
 
 // components
 import TitleLanding from "../TItleLanding/TitleLanding";
-
-// نوع آیتم‌ها
-type SlideItem = {
-  id: string | number;
-  image: string;
-  title: string;
-  description: string;
-};
 
 type ICustomeSliderProps = {
   items: any;
@@ -46,7 +39,7 @@ const CustomeSlider = ({
       autoplay={{ delay: 4000, disableOnInteraction: false }}
       className="w-full"
     >
-      {items.map((item: any) => (
+      {items?.map((item: any) => (
         <SwiperSlide key={item.id}>
           <div
             className={`flex flex-col-reverse lg:flex ${

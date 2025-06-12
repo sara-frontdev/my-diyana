@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: " مهد کودک دیانا",
     type: "website",
-    url: "https://my-diyana.vercel.app", //! ادرس سایت اصلی
+    url: "my-diyana.vercel.app", //! ادرس سایت اصلی
     locale: "fa_IR",
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://my-diyana.vercel.app/", //! ادرس سایت اصلی
+    canonical: "https://my-diyana.vercel.app", //! ادرس سایت اصلی
   },
 };
 

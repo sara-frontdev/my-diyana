@@ -7,9 +7,9 @@ import logo from "$/logo.png";
 const NavbarLogoDecoration = () => {
   return (
     <>
-      <div className="absolute top-[5rem]  w-[52%] left-[50%] h-2 bg-[#cbd2ea] rounded-full z-0" />
+      <div className="absolute top-[5rem]  w-[52%] left-[50%] h-2 bg-[#cbd2ea] rounded-full z-0 " />
 
-      <div className="absolute top-[5rem]   w-[52%] right-[50%] h-2 bg-[#cbd2ea] rounded-full z-0" />
+      <div className="absolute top-[5rem]   w-[52%] right-[50%] h-2 bg-[#cbd2ea] rounded-full z-0 " />
 
       {/* نیم دایره لوگو */}
       <div

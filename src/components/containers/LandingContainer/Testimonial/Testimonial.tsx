@@ -1,29 +1,27 @@
 "use client";
 
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-// lib
-import { useInView } from "react-intersection-observer";
+// components
+const CustomeSlider = dynamic(
+  () => import("@/components/commonComponents/CustomeSlider/CustomeSlider"),
+  {
+    ssr: false,
+    loading: () => <SkeletonCustomeSlider imagePosition="left" />,
+  }
+);
 
-import CustomeSlider from "@/components/commonComponents/CustomeSlider/CustomeSlider";
-
+import SkeletonCustomeSlider from "@/components/commonComponents/CustomeSliderSkeleton/CustomeSliderSkeleton";
 import { testimonial } from "@/core/data/Landing/Testimonial/Testimonial.data";
 
 // img
 import puzzle from "$/images/landing/testimonial/puzzle.webp";
 
 const Testimonial = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
   return (
-    <div
-      ref={ref}
-      className="relative w-full 2xl:w-[1400px]  2xl:min-h-[45rem]  flex items-start justify-center 
-                  pt-8 mt-16 md:mt-[-8rem] lg:mt-[-3rem] 2xl:mt-[-10rem] mb-[18rem] sm:mb-60  2xl:mb-0 mx-auto "
-    >
-      <div className="absolute  right-0 top-[20rem] md:right-0 md:top-[20rem] lg:right-[6rem] lg:top-[20rem] flex">
+    <div className="relative w-full mb-52 mt-24 xl:mt-0">
+      <div className="absolute right-0 top-72 sm:right-20">
         <Image
           src={puzzle.src}
           alt=" تصویر پس زمینه مشاهده نظرات"
@@ -33,22 +31,20 @@ const Testimonial = () => {
         />
       </div>
 
-      <div className="relative z-10 w-full max-w-3xl px-4">
-        <div className="bg-[#fcdede] rounded-xl p-4 flex flex-col items-center max-w-3xl mx-auto">
-          <div className="absolute -top-4 right-[3rem] flex gap-1">
+      <div className="relative z-10 max-w-3xl  md:max-w-xl  xl:max-w-3xl  custome2xl:max-w-4xl custome2xl1:max-w-5xl mx-auto px-4 ">
+        <div className="bg-[#fcdede] rounded-xl p-4 flex flex-col items-center ">
+          <div className="absolute -top-4 left-[3rem] flex gap-1">
             <div className="w-2 h-6 bg-[#a5bce6] rounded" />
-            <div className="w-2 h-6 bg-[#a5bce6] rounded" />
+            <div className="w-2 h6 bg-[#a5bce6] rounded" />
           </div>
 
-          {inView && (
-            <CustomeSlider
-              items={testimonial}
-              imagePosition="left"
-              bgColor="bg-[#fcdede]"
-              bgdesc="bg-[#fdeced]"
-              titleSlider="پیام های رضایت شما"
-            />
-          )}
+          <CustomeSlider
+            items={testimonial}
+            imagePosition="left"
+            bgColor="bg-[#fcdede]"
+            bgdesc="bg-[#fdeced]"
+            titleSlider="پیام های رضایت شما"
+          />
         </div>
       </div>
     </div>
