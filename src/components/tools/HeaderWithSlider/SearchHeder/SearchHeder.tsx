@@ -5,18 +5,13 @@ import { Form, Input } from "antd";
 import { CiSearch } from "react-icons/ci";
 
 import "./SearchHeader.scss";
+import SearchInMobile from "./SearchInMobile/SearchInMobile";
 
 const SearchHeder = () => {
   // FormValues
   const onFinish = (values: any) => {};
   return (
     <>
-      {/******************  In mobile  ******************/}
-
-      <div className="flex md:hidden">
-        <CiSearch className=" text-gray-500" size={20} />
-      </div>
-
       {/******************  In Desktop  ******************/}
       <div className=" relative hidden md:flex">
         <Form onFinish={onFinish}>
@@ -34,6 +29,9 @@ const SearchHeder = () => {
           />
         </Form>
       </div>
+
+      {/******************  In mobile  ******************/}
+      <SearchInMobile />
     </>
   );
 };

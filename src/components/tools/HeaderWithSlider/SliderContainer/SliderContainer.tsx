@@ -17,7 +17,7 @@ import backGreen from "$/images/landing/slider/backandwave.webp";
 const SliderContainer = () => {
   return (
     <>
-      <div className="relative w-full h-[800px] md:h-[900px] xl:h-[1000px] flex flex-col items-center justify-center overflow-hidden pt-[4rem] md:pt-[2rem]">
+      <div className="relative w-full h-[800px] md:h-[900px] xl:h-[1000px] flex flex-col items-center justify-center overflow-hidden pt-[10rem] md:pt-[2rem]">
         {/* تصویر پس‌زمینه */}
         <Image
           src={backGreen.src}
