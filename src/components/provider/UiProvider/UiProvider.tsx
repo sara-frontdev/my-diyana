@@ -7,6 +7,7 @@ import { FC } from "react";
 import { AntDesignConfig } from "./AntDesignConfig/AntDesignConfig";
 
 import "@/styles/globals.scss";
+import { NProsessBarProvider } from "./NProsessBar/NProsessBarProvider";
 
 export interface IPropType {
   children: React.ReactNode;
@@ -15,7 +16,9 @@ export interface IPropType {
 const UiProvider: FC<IPropType> = ({ children }) => {
   return (
     <>
-      <AntDesignConfig>{children}</AntDesignConfig>
+      <NProsessBarProvider>
+        <AntDesignConfig>{children}</AntDesignConfig>
+      </NProsessBarProvider>
     </>
   );
 };

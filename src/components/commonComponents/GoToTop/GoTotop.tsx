@@ -34,7 +34,7 @@ const GoToTop = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-8 right-8 bg-customeBlue text-white p-3 rounded-full shadow-lg hover:bg-customeOrange focus:outline-none"
+          className="fixed bottom-8 right-8 bg-customeYellow text-white p-3 rounded-full shadow-lg hover:bg-customeBlueDeep focus:outline-none"
         >
           <IoMdArrowUp size={28} />
         </motion.button>

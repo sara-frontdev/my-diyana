@@ -19,7 +19,7 @@ const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-cente mt-[-16rem] px-2 sm:px-8">
+    <div className="relative  flex items-center justify-cente px-2 sm:px-8 xxs:mt-[-8rem] xs3:mt-[-12rem]  sm:mt-[-10rem] xl:mt-[-19rem]">
       {/* Whiteboard Container */}
       <div
         className="relative bg-white rounded-3xl shadow-lg border-2 border-[#c7ccf7] 

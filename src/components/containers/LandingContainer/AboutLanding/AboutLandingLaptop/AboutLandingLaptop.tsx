@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 // components
-import CustomeButton from "@/components/commonComponents/CustomeButton/CustomeButton";
 import TitleLanding from "@/components/commonComponents/TItleLanding/TitleLanding";
+import CustomCloudButton from "@/components/commonComponents/Button/CustomCloudButton/CustomCloudButton";
 
 const AboutLandingLaptop = () => {
   return (
@@ -30,7 +30,7 @@ const AboutLandingLaptop = () => {
           </p>
 
           <div className="w-[132px] mt-4">
-            <CustomeButton href="/" text="اطلاعات بیشتر" />
+            <CustomCloudButton href="/" text="اطلاعات بیشتر" />
           </div>
         </div>
 

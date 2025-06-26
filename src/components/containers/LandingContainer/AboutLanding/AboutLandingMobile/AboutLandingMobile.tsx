@@ -1,15 +1,15 @@
 import Image from "next/image";
 
 // components
-import CustomeButton from "@/components/commonComponents/CustomeButton/CustomeButton";
+import CustomCloudButton from "@/components/commonComponents/Button/CustomCloudButton/CustomCloudButton";
 
 const AboutLandingMobile = () => {
   return (
     <section
-      className=" flex flex-col-reverse lg:hidden mt-8 sm:mt-16"
+      className=" flex flex-col-reverse lg:hidden mt-8 sm:mt-20"
       aria-labelledby="about-landing-title-mobile"
     >
-      <h2 id="about-landing-title-mobile" className="sr-only">
+      <h2 id="about-landing-title-mobile mt-4" className="sr-only">
         در مورد مرکز ما
       </h2>
 
@@ -29,7 +29,7 @@ const AboutLandingMobile = () => {
         </p>
 
         <div className="w-[132px] mt-4">
-          <CustomeButton href="/" text="اطلاعات بیشتر" />
+          <CustomCloudButton href="/" text="اطلاعات بیشتر" />
         </div>
       </div>
 

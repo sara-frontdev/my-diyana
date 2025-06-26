@@ -41,21 +41,25 @@ export const customerServiceLink = [
 
 export const socialLinks = [
   {
+    id: 1,
     href: "",
     src: insa.src,
     alt: "اینستاگرام",
   },
   {
+    id: 2,
     href: "",
     src: phone.src,
     alt: "تلگرام",
   },
   {
+    id: 3,
     href: "",
     src: telgeram.src,
     alt: "تلگرام",
   },
   {
+    id: 4,
     href: "",
     src: whatsap.src,
     alt: "واتساپ",

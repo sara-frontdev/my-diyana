@@ -3,11 +3,12 @@ import Image from "next/image";
 // componnets
 import QuickAccess from "./QuickAccess/QuickAccess";
 import SocialLinks from "./SocialLinks/SocialLinks";
+import { GoToTop } from "@/components/commonComponents/GoToTop/GoTotop";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="relative w-full  2xl:w-[1400px] mx-auto ">
+      <div className="relative w-full  2xl:w-[1400px] mx-auto mt-16">
         <Image
           src="/images/footer/footer.webp"
           alt="بک گراند فوتر"
@@ -31,6 +32,8 @@ const Footer = () => {
 
         <SocialLinks />
       </div>
+
+      <GoToTop />
     </footer>
   );
 };

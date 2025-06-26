@@ -6,7 +6,7 @@ const DianaActivitiesLaptop = () => {
       aria-labelledby="diana-activities-laptop-title"
       className="relative w-full flex justify-center"
     >
-      <div className="hidden lg:flex  lg:flex-row-reverse justify-center mt-[-14rem] z-10">
+      <div className="hidden lg:flex  lg:flex-row-reverse justify-center mt-[-15rem] z-10">
         {/* 1 */}
         <article
           className="relative"

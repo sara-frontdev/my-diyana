@@ -28,10 +28,11 @@ const config: Config = {
         xxs: { max: "374px" },
         xxs1: { min: "375px", max: "424px" },
         xxs2: { min: "320px", max: "374px" },
+        xxs3: { max: "400px" },
 
         xs: { min: "320px", max: "424px" },
-        xs1: { min: "425px", max: "550px" },
-        xs2: { min: "551px", max: "639px" },
+        xs1: { min: "425px", max: "549px" },
+        xs2: { min: "550px", max: "639px" },
         xs3: { min: "375px", max: "639px" },
 
         custome2xl: { min: "1536px", max: "1999px" },

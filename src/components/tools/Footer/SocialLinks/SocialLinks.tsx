@@ -7,7 +7,7 @@ const SocialLinks = () => {
     <div className="absolute bottom-2 md:bottom-6 left-1/2 -translate-x-1/2 flex gap-4 items-center">
       {socialLinks.map((item) => (
         <a
-          key={item.href}
+          key={item.id}
           href={item.href}
           target="_blank"
           rel="noopener noreferrer"
@@ -18,7 +18,7 @@ const SocialLinks = () => {
             alt={item.alt}
             width={32}
             height={32}
-            className="w-8 h-8 hover:opacity-80 transition-opacity"
+            className="xxs3:w-6 xxs3:h-6 w-8 h-8 hover:opacity-80 transition-opacity"
           />
         </a>
       ))}

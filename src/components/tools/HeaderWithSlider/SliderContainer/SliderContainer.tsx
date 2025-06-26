@@ -12,12 +12,12 @@ const Slider = dynamic(() => import("./Slider/Slider"), {
 import SkeletonSlider from "@/components/commonComponents/SkeletonSlider/SkeletonSlider";
 
 // image
-import backGreen from "$/images/landing/slider/backandwave.webp";
+import backGreen from "$/images/landing/slider/new12.webp";
 
 const SliderContainer = () => {
   return (
     <>
-      <div className="relative w-full h-[800px] md:h-[900px] xl:h-[1000px] flex flex-col items-center justify-center overflow-hidden pt-[10rem] md:pt-[2rem]">
+      <div className="relative w-full h-[870px] flex items-center justify-center">
         {/* تصویر پس‌زمینه */}
         <Image
           src={backGreen.src}
@@ -25,13 +25,12 @@ const SliderContainer = () => {
           aria-hidden="true"
           role="presentation"
           fill
-          priority
           className="object-cover"
           sizes="(max-width: 640px) 80vw, 500px"
         />
 
         {/* اسلایدر */}
-        <div className="relative z-10  md:max-w-[70rem] w-full">
+        <div className="relative z-10  md:max-w-[70rem] w-full ">
           <Slider />
         </div>
       </div>

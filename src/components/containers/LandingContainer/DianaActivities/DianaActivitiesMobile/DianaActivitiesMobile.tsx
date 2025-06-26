@@ -6,7 +6,10 @@ const DianaActivitiesMobile = () => {
       className="relative w-full flex justify-center"
       aria-labelledby="diana-activities-mobile-title"
     >
-      <div className="flex flex-col lg:hidden   mt-[-10rem] z-10">
+      <div
+        className="flex flex-col lg:hidden 
+              xxs:mt-[-20rem] xxs1:mt-[-15rem] xs1:mt-[-15rem] xs2:mt-[-15rem] sm:mt-[-15rem] z-10"
+      >
         {/* 1 */}
         <article
           className="relative"

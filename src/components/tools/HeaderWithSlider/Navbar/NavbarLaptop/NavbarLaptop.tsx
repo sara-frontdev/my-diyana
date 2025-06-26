@@ -33,30 +33,41 @@ const NavbarLaptop = () => {
     >
       {/* منوی راست */}
       <ul className="flex items-center justify-between  lg:w-[44%]">
-        {rightMenu.map((item, index) => (
-          <li key={item.href} className="text-lg text-customeBlack">
-            <Link
-              href={item.href}
-              aria-current={pathname === item.href ? "page" : undefined}
-            >
-              {item.title}
-            </Link>
-          </li>
-        ))}
+        {rightMenu.map((item, index) => {
+          const isActive = pathname === item.href;
+          return (
+            <li key={item.href} className="text-lg text-customeBlack">
+              <Link
+                href={item.href}
+                className={`${isActive && "border-b-2  border-customepink"}`}
+                aria-current={pathname === item.href ? "page" : undefined}
+              >
+                {item.title}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
       {/* منوی چپ */}
       <ul className="flex items-center justify-between  lg:w-[40%]">
-        {leftMenu.map((item, index) => (
-          <li key={item.href} className="text-lg xl:text-xl text-customeBlack">
-            <Link
-              href={item.href}
-              aria-current={pathname === item.href ? "page" : undefined}
+        {leftMenu.map((item, index) => {
+          const isActive = pathname === item.href;
+          return (
+            <li
+              key={item.href}
+              className="text-lg xl:text-xl text-customeBlack"
             >
-              {item.title}
-            </Link>
-          </li>
-        ))}
+              <Link
+                href={item.href}
+                className={`${isActive && "border-b-2  border-customepink"}`}
+                aria-current={pathname === item.href ? "page" : undefined}
+              >
+                {item.title}
+              </Link>
+            </li>
+          );
+        })}
         <SearchHeder />
       </ul>
     </nav>

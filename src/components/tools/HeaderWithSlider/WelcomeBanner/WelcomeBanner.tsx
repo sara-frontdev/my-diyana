@@ -1,15 +1,18 @@
 import Image from "next/image";
 
 // components
-import CustomeButton from "@/components/commonComponents/CustomeButton/CustomeButton";
+import CustomCloudButton from "@/components/commonComponents/Button/CustomCloudButton/CustomCloudButton";
+
+// images
+import childeren from "$/images/header/new1.webp";
 
 const WelcomeBanner = () => {
   return (
-    <>
+    <div>
       <div className="relative w-full">
         <Image
-          src="/images/header/childerenBack.webp"
-          alt="تصویر هدر"
+          src={childeren.src}
+          alt="تصویر هدر اول"
           width={1920}
           height={550}
           sizes="100vw"
@@ -17,18 +20,25 @@ const WelcomeBanner = () => {
           className="object-contain w-full"
         />
 
-        {/* متن روی تصویر */}
-        <div className="absolute top-[96%] sm:top-[90%] 2xl:top-[94%] left-1/2 w-full transform -translate-x-1/2 -translate-y-1/2 text-center px-4">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-yekan-fat text-customeBlack">
+        <div
+          className="absolute
+               
+                 xxs: bottom-[-8.5rem]  xxs1:bottom-[-6.5rem] xs1:bottom-[-6.5rem] xs2:bottom-[-6.5rem]
+                sm:bottom-[-6.5rem] md:bottom-[-5.5rem] lg:bottom-[-3.5rem] xl:bottom-0
+                left-1/2 -translate-x-1/2
+                text-center z-10
+                w-[87%] sm:w-full px-4"
+        >
+          <h1 className="text-base sm:text-[1.8rem] lg:text-[2rem] 2xl:text-4xl font-yekan-fat text-customeBlack leading-relaxed">
             به آکادمی کودک دیانا، بهشت کودکان خوش آمدید
           </h1>
-        </div>
 
-        <div className="absolute top-[242px] sm:top-[98%] 2xl:top-[103%] left-1/2 transform -translate-x-1/2 w-full flex justify-center  z-50">
-          <CustomeButton href="/login" text="ثبت نام آنلاین" />
+          <div className="mt-[-1rem] sm:mt-[1rem]">
+            <CustomCloudButton href="/login" text="ثبت نام آنلاین" />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

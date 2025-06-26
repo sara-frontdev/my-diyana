@@ -1,3 +1,5 @@
+import { usePathname } from "next/navigation";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,6 +7,9 @@ import Link from "next/link";
 import logo from "$/logo.png";
 
 const NavbarLogoDecoration = () => {
+  const pathname = usePathname();
+  const isLandingPage = pathname === "/";
+
   return (
     <>
       <div className="absolute top-[5rem]  w-[52%] left-[50%] h-2 bg-[#cbd2ea] rounded-full z-0 " />
@@ -13,13 +18,13 @@ const NavbarLogoDecoration = () => {
 
       {/* نیم دایره لوگو */}
       <div
-        className="flex items-center justify-center 
+        className={`flex items-center justify-center 
                       absolute xs:left-[62.5%] xs1:left-[57%] xs2:left-[55.5%] sm:left-[58%] md:left-[57%] lg:left-[55%] xl:left-[53%]
                       w-[5rem] h-[2rem]
                       md:w-[6.2rem] md:h-[2.5rem] 
                       transform -translate-x-full
                       rounded-b-full border-l border-r border-b border-customeBlack
-                      z-20 bg-[#e2f5fc]"
+                      z-20 ${isLandingPage ? "bg-[#e2f5fc]" : "bg-white"} `}
       >
         <Link
           href="/"

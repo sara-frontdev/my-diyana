@@ -11,6 +11,7 @@ import {
 } from "react-icons/fi";
 
 export interface IMainHeaderMenu {
+  id: string;
   key: headerMenuKeyEnum;
   href: string;
   title: string;
@@ -20,6 +21,7 @@ export interface IMainHeaderMenu {
 
 export const mainHeaderMenu: IMainHeaderMenu[] = [
   {
+    id: "1",
     key: headerMenuKeyEnum.landing,
     href: "/",
     title: "خانه",
@@ -27,6 +29,7 @@ export const mainHeaderMenu: IMainHeaderMenu[] = [
     icon: FiHome,
   },
   {
+    id: "2",
     key: headerMenuKeyEnum.education,
     href: "/education",
     title: "آموزش",
@@ -34,6 +37,7 @@ export const mainHeaderMenu: IMainHeaderMenu[] = [
     icon: FiBook,
   },
   {
+    id: "3",
     key: headerMenuKeyEnum.store,
     href: "/store",
     title: "فروشگاه",
@@ -41,6 +45,7 @@ export const mainHeaderMenu: IMainHeaderMenu[] = [
     icon: FiShoppingCart,
   },
   {
+    id: "4",
     key: headerMenuKeyEnum.gallery,
     href: "/gallery",
     title: "گالری",
@@ -48,24 +53,28 @@ export const mainHeaderMenu: IMainHeaderMenu[] = [
     icon: FiImage,
   },
   {
+    id: "5",
     key: headerMenuKeyEnum.landing,
     href: "",
     title: "",
     exact: true,
   },
   {
+    id: "6",
     key: headerMenuKeyEnum.landing,
     href: "",
     title: "",
     exact: true,
   },
   {
+    id: "7",
     key: headerMenuKeyEnum.landing,
     href: "",
     title: "",
     exact: true,
   },
   {
+    id: "8",
     key: headerMenuKeyEnum.news,
     href: "/news",
     title: "اخبار",
@@ -73,6 +82,7 @@ export const mainHeaderMenu: IMainHeaderMenu[] = [
     icon: FiRadio,
   },
   {
+    id: "9",
     key: headerMenuKeyEnum.aboutUS,
     href: "/about-us",
     title: "درباره ما",
@@ -80,6 +90,7 @@ export const mainHeaderMenu: IMainHeaderMenu[] = [
     icon: FiInfo,
   },
   {
+    id: "10",
     key: headerMenuKeyEnum.contactUs,
     href: "/contact-us",
     title: "تماس",
